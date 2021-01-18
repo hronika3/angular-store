@@ -1,11 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="34570ff3-728c-498b-a7cc-a3f5fea19194" name="Default Changelist" comment="" />
+    <list default="true" id="34570ff3-728c-498b-a7cc-a3f5fea19194" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/app/admin/shared/services/auth.guard.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/admin/admin.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/admin/admin.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/admin/login-page/login-page.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/admin/login-page/login-page.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/admin/login-page/login-page.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/admin/login-page/login-page.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/admin/shared/components/admin-layout/admin-layout.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/admin/shared/components/admin-layout/admin-layout.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/admin/shared/components/admin-layout/admin-layout.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/admin/shared/components/admin-layout/admin-layout.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/admin/shared/services/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/admin/shared/services/auth.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/shared/interfaces.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/interfaces.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -18,12 +55,12 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../WebStorm projects/diplom-dnt-wrk" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="ts.external.directory.path" value="D:\angular\15. Практика. Создание блога\angular-store\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="D:\angular\Store\angular-store\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -76,41 +113,61 @@
       <workItem from="1610718143119" duration="290000" />
       <workItem from="1610718645784" duration="1194000" />
       <workItem from="1610719890735" duration="6775000" />
-      <workItem from="1610726846219" duration="523000" />
+      <workItem from="1610726846219" duration="1248000" />
+      <workItem from="1610971502312" duration="8255000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
+    <state x="586" y="198" key="#Inspections" timestamp="1610974871002">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="586" y="198" key="#Inspections/0.0.1920.1040@0.0.1920.1040" timestamp="1610974871002" />
     <state x="721" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1610720453086">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="721" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1610720453086" />
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1610976146265">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1610976146265" />
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1610721017908">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1610721017908" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1610716225534">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1610981069042">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1610716225534" />
-    <state width="1899" height="144" key="GridCell.Tab.0.bottom" timestamp="1610726805683">
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1610981069042" />
+    <state width="1899" height="144" key="GridCell.Tab.0.bottom" timestamp="1610981220542">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="144" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1610726805683" />
-    <state width="1899" height="144" key="GridCell.Tab.0.center" timestamp="1610726805683">
+    <state width="1899" height="144" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1610981220542" />
+    <state width="1899" height="144" key="GridCell.Tab.0.center" timestamp="1610981220542">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="144" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1610726805683" />
-    <state width="1899" height="144" key="GridCell.Tab.0.left" timestamp="1610726805683">
+    <state width="1899" height="144" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1610981220542" />
+    <state width="1899" height="144" key="GridCell.Tab.0.left" timestamp="1610981220542">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="144" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1610726805683" />
-    <state width="1899" height="144" key="GridCell.Tab.0.right" timestamp="1610726805683">
+    <state width="1899" height="144" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1610981220542" />
+    <state width="1899" height="144" key="GridCell.Tab.0.right" timestamp="1610981220542">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="144" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1610726805683" />
+    <state width="1899" height="144" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1610981220542" />
   </component>
 </project>
