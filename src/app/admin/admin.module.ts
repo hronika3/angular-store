@@ -19,7 +19,7 @@ import {AuthGuard} from './shared/services/auth.guard';
     DashboardPageComponent,
     CreatePageComponent,
     EditPageComponent,
-    CatalogPageComponent
+    CatalogPageComponent,
   ],
   imports: [
     CommonModule,

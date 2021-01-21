@@ -5,13 +5,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainLayoutComponent } from './shared/components/main-layout/main-layout.component';
 import { HomePageComponent } from './home-page/home-page.component';
-import {SharedModule} from './admin/shared/shared.module';
+import { SharedModule } from './admin/shared/shared.module';
+import {ProductPageComponent} from './product-page/product-page.component';
+import {ProductComponent} from './shared/components/product/product.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainLayoutComponent,
-    HomePageComponent
+    HomePageComponent,
+    ProductPageComponent,
+    ProductComponent
   ],
   imports: [
     BrowserModule,

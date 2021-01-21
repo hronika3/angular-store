@@ -20,17 +20,348 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="34570ff3-728c-498b-a7cc-a3f5fea19194" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/app/admin/shared/services/auth.guard.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/accordion/accordion-config.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/accordion/accordion.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/accordion/accordion.module.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/alert/alert-config.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/alert/alert.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/alert/alert.module.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/bundles/ng-bootstrap.umd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/bundles/ng-bootstrap.umd.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/bundles/ng-bootstrap.umd.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/bundles/ng-bootstrap.umd.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/buttons/buttons.module.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/buttons/checkbox.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/buttons/label.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/buttons/radio.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/carousel/carousel-config.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/carousel/carousel.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/carousel/carousel.module.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/collapse/collapse.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/collapse/collapse.module.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/datepicker/adapters/ngb-date-adapter.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/datepicker/adapters/ngb-date-native-adapter.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/datepicker/adapters/ngb-date-native-utc-adapter.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker-config.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker-day-template-context.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker-day-view.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker-i18n.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker-input-config.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker-input.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker-keyboard-service.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker-month.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker-navigation-select.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker-navigation.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker-service.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker-tools.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker-view-model.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker.module.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/datepicker/hebrew/datepicker-i18n-hebrew.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/datepicker/hebrew/hebrew.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/datepicker/hebrew/ngb-calendar-hebrew.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/datepicker/hijri/ngb-calendar-hijri.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/datepicker/hijri/ngb-calendar-islamic-civil.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/datepicker/hijri/ngb-calendar-islamic-umalqura.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/datepicker/jalali/jalali.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/datepicker/jalali/ngb-calendar-persian.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/datepicker/ngb-calendar.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/datepicker/ngb-date-parser-formatter.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/datepicker/ngb-date-struct.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/datepicker/ngb-date.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/dropdown/dropdown-config.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/dropdown/dropdown.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/dropdown/dropdown.module.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/accordion/accordion-config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/accordion/accordion.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/accordion/accordion.module.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/alert/alert-config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/alert/alert.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/alert/alert.module.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/buttons/buttons.module.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/buttons/checkbox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/buttons/label.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/buttons/radio.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/carousel/carousel-config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/carousel/carousel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/carousel/carousel.module.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/collapse/collapse.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/collapse/collapse.module.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/datepicker/adapters/ngb-date-adapter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/datepicker/adapters/ngb-date-native-adapter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/datepicker/adapters/ngb-date-native-utc-adapter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/datepicker/datepicker-config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/datepicker/datepicker-day-template-context.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/datepicker/datepicker-day-view.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/datepicker/datepicker-i18n.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/datepicker/datepicker-input-config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/datepicker/datepicker-input.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/datepicker/datepicker-keyboard-service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/datepicker/datepicker-month.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/datepicker/datepicker-navigation-select.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/datepicker/datepicker-navigation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/datepicker/datepicker-service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/datepicker/datepicker-tools.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/datepicker/datepicker-view-model.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/datepicker/datepicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/datepicker/datepicker.module.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/datepicker/hebrew/datepicker-i18n-hebrew.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/datepicker/hebrew/hebrew.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/datepicker/hebrew/ngb-calendar-hebrew.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/datepicker/hijri/ngb-calendar-hijri.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/datepicker/hijri/ngb-calendar-islamic-civil.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/datepicker/hijri/ngb-calendar-islamic-umalqura.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/datepicker/jalali/jalali.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/datepicker/jalali/ngb-calendar-persian.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/datepicker/ngb-calendar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/datepicker/ngb-date-parser-formatter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/datepicker/ngb-date-struct.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/datepicker/ngb-date.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/dropdown/dropdown-config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/dropdown/dropdown.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/dropdown/dropdown.module.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/modal/modal-backdrop.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/modal/modal-config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/modal/modal-dismiss-reasons.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/modal/modal-ref.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/modal/modal-stack.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/modal/modal-window.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/modal/modal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/modal/modal.module.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/nav/nav-config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/nav/nav-outlet.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/nav/nav.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/nav/nav.module.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/ng-bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/pagination/pagination-config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/pagination/pagination.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/pagination/pagination.module.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/popover/popover-config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/popover/popover.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/popover/popover.module.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/progressbar/progressbar-config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/progressbar/progressbar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/progressbar/progressbar.module.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/rating/rating-config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/rating/rating.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/rating/rating.module.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/tabset/tabset-config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/tabset/tabset.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/tabset/tabset.module.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/timepicker/ngb-time-adapter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/timepicker/ngb-time-struct.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/timepicker/ngb-time.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/timepicker/timepicker-config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/timepicker/timepicker-i18n.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/timepicker/timepicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/timepicker/timepicker.module.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/toast/toast-config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/toast/toast.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/toast/toast.module.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/tooltip/tooltip-config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/tooltip/tooltip.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/tooltip/tooltip.module.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/typeahead/highlight.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/typeahead/typeahead-config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/typeahead/typeahead-window.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/typeahead/typeahead.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/typeahead/typeahead.module.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/util/accessibility/live.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/util/autoclose.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/util/focus-trap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/util/key.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/util/popup.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/util/positioning.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/util/scrollbar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/util/triggers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm2015/util/util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/accordion/accordion-config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/accordion/accordion.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/accordion/accordion.module.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/alert/alert-config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/alert/alert.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/alert/alert.module.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/buttons/buttons.module.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/buttons/checkbox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/buttons/label.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/buttons/radio.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/carousel/carousel-config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/carousel/carousel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/carousel/carousel.module.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/collapse/collapse.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/collapse/collapse.module.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/datepicker/adapters/ngb-date-adapter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/datepicker/adapters/ngb-date-native-adapter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/datepicker/adapters/ngb-date-native-utc-adapter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/datepicker/datepicker-config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/datepicker/datepicker-day-template-context.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/datepicker/datepicker-day-view.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/datepicker/datepicker-i18n.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/datepicker/datepicker-input-config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/datepicker/datepicker-input.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/datepicker/datepicker-keyboard-service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/datepicker/datepicker-month.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/datepicker/datepicker-navigation-select.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/datepicker/datepicker-navigation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/datepicker/datepicker-service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/datepicker/datepicker-tools.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/datepicker/datepicker-view-model.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/datepicker/datepicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/datepicker/datepicker.module.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/datepicker/hebrew/datepicker-i18n-hebrew.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/datepicker/hebrew/hebrew.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/datepicker/hebrew/ngb-calendar-hebrew.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/datepicker/hijri/ngb-calendar-hijri.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/datepicker/hijri/ngb-calendar-islamic-civil.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/datepicker/hijri/ngb-calendar-islamic-umalqura.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/datepicker/jalali/jalali.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/datepicker/jalali/ngb-calendar-persian.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/datepicker/ngb-calendar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/datepicker/ngb-date-parser-formatter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/datepicker/ngb-date-struct.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/datepicker/ngb-date.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/dropdown/dropdown-config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/dropdown/dropdown.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/dropdown/dropdown.module.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/modal/modal-backdrop.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/modal/modal-config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/modal/modal-dismiss-reasons.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/modal/modal-ref.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/modal/modal-stack.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/modal/modal-window.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/modal/modal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/modal/modal.module.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/nav/nav-config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/nav/nav-outlet.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/nav/nav.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/nav/nav.module.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/ng-bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/pagination/pagination-config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/pagination/pagination.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/pagination/pagination.module.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/popover/popover-config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/popover/popover.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/popover/popover.module.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/progressbar/progressbar-config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/progressbar/progressbar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/progressbar/progressbar.module.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/rating/rating-config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/rating/rating.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/rating/rating.module.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/tabset/tabset-config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/tabset/tabset.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/tabset/tabset.module.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/timepicker/ngb-time-adapter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/timepicker/ngb-time-struct.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/timepicker/ngb-time.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/timepicker/timepicker-config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/timepicker/timepicker-i18n.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/timepicker/timepicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/timepicker/timepicker.module.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/toast/toast-config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/toast/toast.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/toast/toast.module.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/tooltip/tooltip-config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/tooltip/tooltip.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/tooltip/tooltip.module.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/typeahead/highlight.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/typeahead/typeahead-config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/typeahead/typeahead-window.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/typeahead/typeahead.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/typeahead/typeahead.module.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/util/accessibility/live.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/util/autoclose.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/util/focus-trap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/util/key.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/util/popup.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/util/positioning.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/util/scrollbar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/util/triggers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/esm5/util/util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/fesm2015/ng-bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/fesm2015/ng-bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/fesm5/ng-bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/fesm5/ng-bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/modal/modal-backdrop.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/modal/modal-config.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/modal/modal-dismiss-reasons.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/modal/modal-ref.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/modal/modal-stack.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/modal/modal-window.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/modal/modal.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/modal/modal.module.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/nav/nav-config.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/nav/nav-outlet.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/nav/nav.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/nav/nav.module.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/ng-bootstrap.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/ng-bootstrap.metadata.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/pagination/pagination-config.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/pagination/pagination.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/pagination/pagination.module.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/popover/popover-config.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/popover/popover.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/popover/popover.module.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/progressbar/progressbar-config.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/progressbar/progressbar.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/progressbar/progressbar.module.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/rating/rating-config.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/rating/rating.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/rating/rating.module.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/tabset/tabset-config.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/tabset/tabset.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/tabset/tabset.module.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/test/typings/custom-jasmine.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/timepicker/ngb-time-adapter.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/timepicker/ngb-time-struct.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/timepicker/ngb-time.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker-config.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker-i18n.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker.module.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/toast/toast-config.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/toast/toast.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/toast/toast.module.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/tooltip/tooltip-config.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/tooltip/tooltip.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/tooltip/tooltip.module.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/typeahead/highlight.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/typeahead/typeahead-config.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/typeahead/typeahead-window.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/typeahead/typeahead.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/typeahead/typeahead.module.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/util/accessibility/live.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/util/autoclose.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/util/focus-trap.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/util/key.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/util/popup.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/util/positioning.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/util/scrollbar.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/util/triggers.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@ng-bootstrap/ng-bootstrap/util/util.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/product-page/product-page.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/product-page/product-page.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/product-page/product-page.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/shared/components/product/product.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/shared/components/product/product.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/shared/components/product/product.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/admin/admin.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/admin/admin.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/admin/login-page/login-page.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/admin/login-page/login-page.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/admin/login-page/login-page.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/admin/login-page/login-page.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/admin/shared/components/admin-layout/admin-layout.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/admin/shared/components/admin-layout/admin-layout.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/admin/shared/components/admin-layout/admin-layout.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/admin/shared/components/admin-layout/admin-layout.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/admin/shared/services/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/admin/shared/services/auth.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/shared/interfaces.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/interfaces.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/admin/dashboard-page/dashboard-page.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/admin/dashboard-page/dashboard-page.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/admin/dashboard-page/dashboard-page.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/admin/dashboard-page/dashboard-page.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/home-page/home-page.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/home-page/home-page.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/shared/components/main-layout/main-layout.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/components/main-layout/main-layout.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/shared/components/main-layout/main-layout.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/components/main-layout/main-layout.component.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,11 +379,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1mvN7UgRbvwLBzpcTAEixNvYrmd" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../WebStorm projects/diplom-dnt-wrk" />
@@ -114,7 +449,9 @@
       <workItem from="1610718645784" duration="1194000" />
       <workItem from="1610719890735" duration="6775000" />
       <workItem from="1610726846219" duration="1248000" />
-      <workItem from="1610971502312" duration="8255000" />
+      <workItem from="1610971502312" duration="9732000" />
+      <workItem from="1611161007538" duration="2192000" />
+      <workItem from="1611227573806" duration="5171000" />
     </task>
     <servers />
   </component>
@@ -131,6 +468,10 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="586" y="198" key="#Inspections" timestamp="1610974871002">
@@ -153,21 +494,25 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1610981069042" />
-    <state width="1899" height="144" key="GridCell.Tab.0.bottom" timestamp="1610981220542">
+    <state width="1899" height="144" key="GridCell.Tab.0.bottom" timestamp="1611232563116">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="144" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1610981220542" />
-    <state width="1899" height="144" key="GridCell.Tab.0.center" timestamp="1610981220542">
+    <state width="1899" height="144" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1611232563116" />
+    <state width="1899" height="144" key="GridCell.Tab.0.center" timestamp="1611232563115">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="144" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1610981220542" />
-    <state width="1899" height="144" key="GridCell.Tab.0.left" timestamp="1610981220542">
+    <state width="1899" height="144" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1611232563115" />
+    <state width="1899" height="144" key="GridCell.Tab.0.left" timestamp="1611232563115">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="144" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1610981220542" />
-    <state width="1899" height="144" key="GridCell.Tab.0.right" timestamp="1610981220542">
+    <state width="1899" height="144" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1611232563115" />
+    <state width="1899" height="144" key="GridCell.Tab.0.right" timestamp="1611232563115">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="144" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1610981220542" />
+    <state width="1899" height="144" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1611232563115" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1611228986918">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1611228986918" />
   </component>
 </project>
