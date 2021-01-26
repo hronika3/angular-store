@@ -1,4 +1,4 @@
-<nav class="navbar bg-primary">
+<nav class="navbar bg-dark">
   <h1>
     <a routerLink="/">Angular Admin</a>
   </h1>
@@ -8,7 +8,7 @@
       <a [routerLink]="['/admin', 'dashboard']">Главная</a>
     </li>
     <li routerLinkActive="active">
-      <a [routerLink]="['/admin', 'catalog']">Каталог</a>
+      <a [routerLink]="['/admin', 'create']">Добавить товар</a>
     </li>
     <li>
       <a href="#" (click)="logout($event)">Выйти</a>

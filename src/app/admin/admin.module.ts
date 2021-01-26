@@ -12,6 +12,7 @@ import {SharedModule} from './shared/shared.module';
 import { CatalogPageComponent } from './catalog-page/catalog-page.component';
 import {AuthGuard} from './shared/services/auth.guard';
 
+
 @NgModule({
   declarations: [
     AdminLayoutComponent,
@@ -19,7 +20,7 @@ import {AuthGuard} from './shared/services/auth.guard';
     DashboardPageComponent,
     CreatePageComponent,
     EditPageComponent,
-    CatalogPageComponent,
+    CatalogPageComponent
   ],
   imports: [
     CommonModule,
@@ -33,8 +34,7 @@ import {AuthGuard} from './shared/services/auth.guard';
           {path: 'login', component: LoginPageComponent},
           {path: 'dashboard', component: DashboardPageComponent, canActivate: [AuthGuard]},
           {path: 'create', component: CreatePageComponent, canActivate: [AuthGuard]},
-          {path: 'catalog', component: CatalogPageComponent, canActivate: [AuthGuard]},
-          {path: 'post/:id/edit', component: EditPageComponent, canActivate: [AuthGuard]}
+          {path: 'catalog', component: CatalogPageComponent, canActivate: [AuthGuard]}
         ]
       }
     ])

@@ -8,6 +8,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { SharedModule } from './admin/shared/shared.module';
 import {ProductPageComponent} from './product-page/product-page.component';
 import {ProductComponent} from './shared/components/product/product.component';
+import {NgbPaginationModule, NgbAlertModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import {ProductComponent} from './shared/components/product/product.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SharedModule
+    SharedModule,
+    [NgbPaginationModule, NgbAlertModule]
   ],
   providers: [],
   bootstrap: [AppComponent]

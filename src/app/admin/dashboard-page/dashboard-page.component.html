@@ -1,1 +1,32 @@
-
+<div *ngIf="products.length; else loading">
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Категория</th>
+                <th>Название</th>
+                <th>Действие</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let product of products; let idx = index">
+            <td>{{idx + 1}}</td>
+            <td>{{ product.category}}</td>
+            <td>{{ product.title }}</td>
+            <td>
+                <button class="btn-dark open">
+                    Открыть
+                </button>
+                <button class="btn-danger">
+                    Удалить
+                </button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<ng-template #loading>
+    <p class="text-center text-light">
+        Загрузка
+    </p>
+</ng-template>
