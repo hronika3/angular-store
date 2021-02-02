@@ -14,6 +14,8 @@ export interface Product {
   title: string
   category: string
   text: string
+  cost: string
+  image?: string
 }
 
 export interface FbCreateResponse {

@@ -3,6 +3,8 @@ import {Routes, RouterModule, PreloadAllModules} from '@angular/router';
 import {MainLayoutComponent} from './shared/components/main-layout/main-layout.component';
 import {HomePageComponent} from './home-page/home-page.component';
 import {ProductPageComponent} from './product-page/product-page.component';
+import {EditPageComponent} from './admin/edit-page/edit-page.component';
+import {AuthGuard} from './admin/shared/services/auth.guard';
 
 
 const routes: Routes = [

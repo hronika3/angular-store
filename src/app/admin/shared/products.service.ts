@@ -8,7 +8,8 @@ import {map} from 'rxjs/operators';
 @Injectable({providedIn: 'root'})
 
 export class ProductsService {
-    constructor(private http: HttpClient) {}
+    constructor(private http: HttpClient) {
+    }
 
     create(product: Product): Observable<Product> {
         return this.http.post(`${environment.fbDbUrl}/products.json`, product)
@@ -16,19 +17,52 @@ export class ProductsService {
                 return {
                     ...product,
                     id: response.name
-                }
-            }))
+                };
+            }));
     }
 
     getAll(): Observable<Product[]> {
+
+            return this.http.get(`${environment.fbDbUrl}/products.json`)
+                .pipe(map((response: { [key: string]: any }) => {
+                    return Object
+                        .keys(response)
+                        .map(key => ({
+                            ...response[key],
+                            id: key
+                        }));
+                }));
+
+    }
+
+    searchStr(): Observable<Product[]> {
         return this.http.get(`${environment.fbDbUrl}/products.json`)
-            .pipe(map((response: {[key: string]: any}) => {
+            .pipe(map((response: { [key: string]: any }) => {
                 return Object
                     .keys(response)
                     .map(key => ({
                         ...response[key],
                         id: key
-                    }))
-            }))
+                    }));
+            }));
     }
+
+    getById(id: string): Observable<Product> {
+        return this.http.get<Product>(`${environment.fbDbUrl}/products/${id}.json`)
+            .pipe(map((products: Product) => {
+                return {
+                    ...products, id
+                };
+            }));
+    }
+
+    remove(id): Observable<void> {
+        return this.http.delete<void>(`${environment.fbDbUrl}/products/${id}.json`);
+    }
+
+    update(product: Product): Observable<Product> {
+        return this.http.patch<Product>(`${environment.fbDbUrl}/products/${product.id}.json`, product);
+    }
+
+
 }

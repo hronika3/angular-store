@@ -2,8 +2,6 @@
 /.browserslistrc
 /angular.json
 /karma.conf.js
-/package.json
-/package-lock.json
 /README.md
 /tsconfig.app.json
 /tsconfig.json

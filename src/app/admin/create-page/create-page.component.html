@@ -1,45 +1,4 @@
-<form [formGroup]="form" (ngSubmit)="submit()">
-    <h1>Добавление товара</h1>
-    <div
-            class="form-control"
-            [ngClass]="{invalid: form.get('title').touched && form.get('title').invalid}"
-    >
-        <label for="title">Название товара:</label>
-        <input id="title" type="text" formControlName="title">
-        <div
-                *ngIf="form.get('title').touched && form.get('title').invalid"
-                class="validation"
-        >
-            <small *ngIf="form.get('title').errors.required">
-                Введите поле email
-            </small>
-        </div>
-    </div>
+<app-edit-form [productData]="productData" (newItemEvent)="change($event)">
 
-    <div
-            class="form-control"
-            [ngClass]="{invalid: form.get('category').touched && form.get('category').invalid}"
-    >
-        <label for="category">Категория:</label>
-        <input id="category" type="text" formControlName="category">
-        <div
-                *ngIf="form.get('category').touched && form.get('category').invalid"
-                class="validation"
-        >
-            <small *ngIf="form.get('category').errors.required">
-                Введите поле email
-            </small>
-        </div>
-    </div>
+</app-edit-form>
 
-    <div class="form-control">
-        <label>Описание:</label>
-        <quill-editor formControlName="text"></quill-editor>
-    </div>
-
-    <button
-        type="submit"
-        class="btn btn-block btn-dark"
-        [disabled]="form.invalid"
-    >Добавить товар</button>
-</form>

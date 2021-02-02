@@ -11,6 +11,7 @@ import {AuthService} from './shared/services/auth.service';
 import {SharedModule} from './shared/shared.module';
 import { CatalogPageComponent } from './catalog-page/catalog-page.component';
 import {AuthGuard} from './shared/services/auth.guard';
+import {SortPipe} from './shared/components/pipes/sort.pipe';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import {AuthGuard} from './shared/services/auth.guard';
     DashboardPageComponent,
     CreatePageComponent,
     EditPageComponent,
-    CatalogPageComponent
+    CatalogPageComponent,
+    SortPipe
   ],
   imports: [
     CommonModule,
@@ -34,7 +36,8 @@ import {AuthGuard} from './shared/services/auth.guard';
           {path: 'login', component: LoginPageComponent},
           {path: 'dashboard', component: DashboardPageComponent, canActivate: [AuthGuard]},
           {path: 'create', component: CreatePageComponent, canActivate: [AuthGuard]},
-          {path: 'catalog', component: CatalogPageComponent, canActivate: [AuthGuard]}
+          {path: 'catalog', component: CatalogPageComponent, canActivate: [AuthGuard]},
+          {path: 'product/:id/edit', component: EditPageComponent, canActivate: [AuthGuard]}
         ]
       }
     ])

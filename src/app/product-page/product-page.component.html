@@ -1,20 +1,17 @@
 <div class="product">
     <div class="header">
-        <h1>Product title</h1>
+        <h1>{{productData.title}}</h1>
 
         <button routerLink="/" class="btn btn-link">На главную</button>
     </div>
 
+    <div>{{productData.category}}</div>
+
     <div class="info">
-        Cost
+        {{productData.cost}}
     </div>
 
-
     <div>
-        Description
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, quas.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, quas.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, quas.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, quas.</p>
+        {{productData.text}}
     </div>
 </div>
