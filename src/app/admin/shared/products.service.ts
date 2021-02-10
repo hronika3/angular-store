@@ -3,11 +3,13 @@ import {HttpClient} from '@angular/common/http';
 import {Observable} from 'rxjs';
 import {FbCreateResponse, Product} from '../../shared/interfaces';
 import {environment} from '../../../environments/environment';
-import {map} from 'rxjs/operators';
+import {filter, map} from 'rxjs/operators';
+
 
 @Injectable({providedIn: 'root'})
 
 export class ProductsService {
+
     constructor(private http: HttpClient) {
     }
 
@@ -22,34 +24,34 @@ export class ProductsService {
     }
 
     getAll(): Observable<Product[]> {
-
-            return this.http.get(`${environment.fbDbUrl}/products.json`)
-                .pipe(map((response: { [key: string]: any }) => {
-                    return Object
-                        .keys(response)
-                        .map(key => ({
-                            ...response[key],
-                            id: key
-                        }));
-                }));
-
-    }
-
-    searchStr(): Observable<Product[]> {
         return this.http.get(`${environment.fbDbUrl}/products.json`)
             .pipe(map((response: { [key: string]: any }) => {
                 return Object
                     .keys(response)
-                    .map(key => ({
-                        ...response[key],
-                        id: key
-                    }));
+                    .map(key => {
+                        return key;
+                    })
+                    .map(key => (
+                        {
+                            ...response[key],
+                            id: key
+                        }));
             }));
+
+    }
+
+    getByTitle(title): Observable<Product[]> {
+        return this.getAll().pipe(
+            map((products) => {
+                return products.filter(item => item.title.toLowerCase().includes(title.toLowerCase()));
+            })
+        );
     }
 
     getById(id: string): Observable<Product> {
         return this.http.get<Product>(`${environment.fbDbUrl}/products/${id}.json`)
             .pipe(map((products: Product) => {
+                console.log(products);
                 return {
                     ...products, id
                 };

@@ -1,0 +1,14 @@
+
+/*
+Input с фильтрацией, таблицами и всеми результатами.
+ShoppingCard
+Внешний вид
+*/
+
+вид продукта
+{
+<img>
+<title>
+<cost>
+<button open> ?<button add to card>?
+}

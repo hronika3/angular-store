@@ -1,0 +1,63 @@
+<div *ngIf="products.length; else clear">
+    <table>
+        <thead>
+        <tr>
+            <th>#</th>
+            <th>
+                <button class="btn btn-dark" (click)="sort('category', !direction)">Категория
+                </button>
+            </th>
+            <th>
+                <button class="btn btn-dark" (click)="sort('title', !direction)">Название</button>
+            </th>
+            <th>
+                <button class="btn btn-dark" (click)="sort('cost', !direction)">Цена</button>
+            </th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let product of products | sortProducts: sortStr : direction; let idx = index">
+            <td>{{ idx + 1 }}</td>
+            <td>{{ product.category}}</td>
+            <td>{{ product.title }}</td>
+            <td>{{ product.cost }}</td>
+            <td>
+                <button class="btn btn-danger" (click)="remove(idx)">
+                    Удалить
+                </button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <hr>
+    <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
+        <div class="row">
+            <div class="col">
+                <input formControlName="firstName" type="text"
+                       class="form-control" placeholder="First name" aria-label="First name">
+            </div>
+            <div class="col">
+                <input formControlName="lastName" type="text"
+                       class="form-control" placeholder="Last name" aria-label="Last name">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <input formControlName="address" type="text"
+                       class="form-control" placeholder="address" aria-label="address">
+            </div>
+            <div class="col">
+                <button class="btn btn-light" type="submit">Submit</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<ng-template #clear>
+    <div>
+        <h3>Корзина пустая</h3>
+    </div>
+</ng-template>
+

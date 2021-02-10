@@ -1,7 +1,7 @@
 import {NgModule} from '@angular/core';
 import {HttpClientModule} from '@angular/common/http';
 import {QuillModule} from 'ngx-quill';
-import { EditFormComponent } from './components/edit-form/edit-form.component';
+import {EditFormComponent} from './components/edit-form/edit-form.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {CommonModule} from '@angular/common';
 
@@ -21,4 +21,5 @@ import {CommonModule} from '@angular/common';
     declarations: [EditFormComponent]
 })
 
-export class SharedModule {}
+export class SharedModule {
+}

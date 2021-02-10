@@ -5,9 +5,20 @@ import 'zone.js/dist/zone-error';
 import {Environment} from './interface';
 
 export const environment: Environment = {
-  production: false,
-  apiKey: 'AIzaSyBfNmpwic98qlqHCEd2s7Tl3X_ZmGmzzyg',
-  fbDbUrl: 'https://angular-store-46ae1-default-rtdb.firebaseio.com'
+    production: false,
+    apiKey: 'AIzaSyBfNmpwic98qlqHCEd2s7Tl3X_ZmGmzzyg',
+    fbDbUrl: 'https://angular-store-46ae1-default-rtdb.firebaseio.com',
+    firebase: {
+        apiKey: 'AIzaSyBfNmpwic98qlqHCEd2s7Tl3X_ZmGmzzyg',
+        authDomain: 'angular-store-46ae1.firebaseapp.com',
+        databaseURL: 'https://angular-store-46ae1-default-rtdb.firebaseio.com',
+        projectId: 'angular-store-46ae1',
+        storageBucket: 'angular-store-46ae1.appspot.com',
+        messagingSenderId: '300576370994',
+        appId: '1:300576370994:web:3e0f9451fad0f6da23e72b'
+    },
+    database: 'firebase',
+    socialAuthEnabled: true
 };
 
 /*

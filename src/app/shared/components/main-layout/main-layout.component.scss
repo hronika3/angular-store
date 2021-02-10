@@ -16,3 +16,9 @@
 .fs-2 {
   color: #111111;
 }
+
+.main-layout-right {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+}

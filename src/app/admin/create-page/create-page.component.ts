@@ -18,7 +18,8 @@ export class CreatePageComponent implements OnInit {
         title: '',
         category: '',
         text: '',
-        cost: ''
+        cost: '',
+        image: ''
     };
 
     ngOnInit() {
@@ -26,14 +27,10 @@ export class CreatePageComponent implements OnInit {
     }
 
     change(event) {
+        console.log(event);
         this.productService.create(event).subscribe();
     }
 
 
 }
-/*
-Input с фильтрацией, таблицами и всеми результатами.
-ShoppingCard
-Внешний вид
-*/
 

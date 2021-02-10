@@ -1,16 +1,16 @@
 import {Injectable} from '@angular/core';
 import {HttpClient, HttpErrorResponse} from '@angular/common/http';
-import {FbAuthResponse, User} from '../../../shared/interfaces';
+import {FbAuthResponse, FbCreateResponse, User} from '../../../shared/interfaces';
 import {Observable, Subject, throwError} from 'rxjs';
 import {environment} from '../../../../environments/environment';
-import {catchError, tap} from 'rxjs/operators';
+import {catchError, map, tap} from 'rxjs/operators';
 
 @Injectable()
 
 export class AuthService {
     public error$: Subject<string> = new Subject<string>();
 
-    constructor(private htttp: HttpClient) {
+    constructor(private http: HttpClient) {
     }
 
     get token(): string {
@@ -24,7 +24,7 @@ export class AuthService {
 
     login(user: User): Observable<User> {
         user.returnSecureToken = true;
-        return this.htttp.post(`https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=${environment.apiKey}`, user)
+        return this.http.post(`https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=${environment.apiKey}`, user)
             .pipe(
                 tap(this.setToken),
                 catchError(this.handleError.bind(this))
@@ -68,5 +68,15 @@ export class AuthService {
         } else {
             localStorage.clear();
         }
+    }
+
+    register(user: User): Observable<User> {
+        return this.http.post(`${environment.fbDbUrl}/users.json`, user)
+            .pipe(map((response: FbCreateResponse) => {
+                return {
+                    id: response.name,
+                    ...user
+                };
+            }));
     }
 }

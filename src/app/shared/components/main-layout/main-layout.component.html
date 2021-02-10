@@ -1,10 +1,14 @@
 <div class="navbar navbar-expand-lg navbar-light bg-light">
-<nav class="header">
-  <a routerLink="/" class="fs-2">Angular store</a>
-  <button type="button" class="btn btn-outline-dark" routerLink="admin" >Login</button>
-</nav>
+    <nav class="header">
+        <button routerLink="/" class="btn btn-outline-dark">Angular store</button>
+        <div class="main-layout-right">
+            <button type="button" class="btn btn-outline-dark" routerLink="admin">Login</button>
+            <button type="button" class="btn btn-outline-dark" routerLink="/register">Регистрация</button>
+            <button type="button" class="btn btn-outline-dark" routerLink="/cart">Cart</button>
+        </div>
+    </nav>
 </div>
 
 <div class="container">
-  <router-outlet></router-outlet>
+    <router-outlet></router-outlet>
 </div>

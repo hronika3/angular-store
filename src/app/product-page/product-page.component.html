@@ -1,17 +1,14 @@
-<div class="product">
-    <div class="header">
-        <h1>{{productData.title}}</h1>
-
-        <button routerLink="/" class="btn btn-link">На главную</button>
+<div class="position">
+    <div class="product-photo">
+        <img src="{{productData.image}}" alt="photo">
     </div>
-
-    <div>{{productData.category}}</div>
-
-    <div class="info">
-        {{productData.cost}}
-    </div>
-
-    <div>
-        {{productData.text}}
+    <div class="product-info">
+        <div class="product-title">{{productData.title}}</div>
+        <div>
+            <div class="description-label">Описание</div>
+            <div class="product-description">{{productData.text}}</div>
+        </div>
+        <span class="price">{{productData.cost}}$</span>
+        <button class="button">В корзину</button>
     </div>
 </div>

@@ -1,37 +1,37 @@
-<div *ngIf="products.length; else loading">
-    <div>
-        <input type="text" placeholder="Поиск..." [(ngModel)]="searchStr">
-    </div>
-    <table>
-        <thead>
-            <tr>
-                <th>#</th>
-                <th><button (click)="sortStr='category'">Категория</button></th>
-                <th><button (click)="sortStr='title'">Название</button></th>
-                <th><button (click)="sortStr='cost'">Цена</button></th>
-                <th>Действие</th>
-            </tr>
-        </thead>
-        <tbody>
-        <tr *ngFor="let product of products | sortProducts: sortStr; let idx = index">
-            <td>{{ idx + 1 }}</td>
-            <td>{{ product.category}}</td>
-            <td>{{ product.title }}</td>
-            <td>{{ product.cost }}</td>
-            <td>
-                <button class="btn-success open" [routerLink]="['/admin','product',product.id,'edit']">
-                    Редактировать
-                </button>
-                <button class="btn-danger" (click)="remove(product.id)">
-                    Удалить
-                </button>
-            </td>
-        </tr>
-        </tbody>
-    </table>
+<div>
+    <input type="text" placeholder="Поиск..." [(ngModel)]="searchStr" #search>
 </div>
-<ng-template #loading>
-    <div class="spinner-border" role="status">
-        <span class="visually-hidden">Loading...</span>
-    </div>
-</ng-template>
+<table>
+    <thead>
+    <tr>
+        <th>#</th>
+        <th>
+            <button class="btn btn-dark" (click)="sort('category', !direction)">Категория
+            </button>
+        </th>
+        <th>
+            <button class="btn btn-dark" (click)="sort('title', !direction)">Название</button>
+        </th>
+        <th>
+            <button class="btn btn-dark" (click)="sort('cost', !direction)">Цена</button>
+        </th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let product of products | sortProducts: sortStr : direction; let idx = index">
+        <td>{{ idx + 1 }}</td>
+        <td>{{ product.category}}</td>
+        <td>{{ product.title }}</td>
+        <td>{{ product.cost }}</td>
+        <td>
+            <button class="btn btn-success open" [routerLink]="['/admin','product',product.id,'edit']">
+                Редактировать
+            </button>
+            <button class="btn btn-danger" (click)="remove(product.id)">
+                Удалить
+            </button>
+        </td>
+    </tr>
+    </tbody>
+</table>

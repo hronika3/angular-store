@@ -1,23 +1,32 @@
 export interface User {
-  email: string;
-  password: string;
-  returnSecureToken?: boolean;
+    id?: string;
+    email: string;
+    password: string;
+    returnSecureToken?: boolean;
 }
 
 export interface FbAuthResponse {
-  idToken: string;
-  expiresIn: string;
+    idToken: string;
+    expiresIn: string;
 }
 
 export interface Product {
-  id?: string
-  title: string
-  category: string
-  text: string
-  cost: string
-  image?: string
+    id?: string
+    title: string
+    category: string
+    text: string
+    cost: string
+    image: string
 }
 
 export interface FbCreateResponse {
-  name: string
+    name: string
+}
+
+export interface Order {
+    id?: string
+    products: any
+    firstName: string
+    lastName: string
+    address: string
 }

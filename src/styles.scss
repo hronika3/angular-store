@@ -1,6 +1,15 @@
 @import url('https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css');
 @import "~quill/dist/quill.snow.css";
 
+svg#clouds {
+  position: fixed;
+  bottom: -160px;
+  left: -230px;
+  z-index: -10;
+  width: 1920px;
+  opacity: 0.6;
+}
+
 :root {
   --primary-color: #dc3545;
   --dark-color: #333333;

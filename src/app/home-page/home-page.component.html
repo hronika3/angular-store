@@ -1,31 +1,21 @@
-<div *ngIf="products.length; else loading">
-    <table>
-        <thead>
-        <tr>
-            <th>#</th>
-            <th>Категория</th>
-            <th>Название</th>
-            <th>Цена</th>
-            <th>Действие</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr *ngFor="let product of products; let idx = index">
-            <td>{{ idx + 1 }}</td>
-            <td>{{ product.category}}</td>
-            <td>{{ product.title }}</td>
-            <td>{{ product.cost }}</td>
-            <td>
-                <button class="btn-success open" [routerLink]="['product',product.id,'product-page']">
-                    Просмотр
-                </button>
-            </td>
-        </tr>
-        </tbody>
-    </table>
+<div class="position" *ngIf="products.length; else loading">
+    <div class="product-window" *ngFor="let product of products; let idx = index">
+        <div class="product-item">
+            <img src="{{product.image}}">
+            <div class="product-list">
+                <h3>{{product.title}}</h3>
+                <span class="price">{{product.cost | currency}}</span>
+                <a [routerLink]="['/product',product.id]" class="button">Просмотр</a>
+                <p class="button">|</p>
+                <a type="button" class="button"
+                        (click)="addToCart(product)"> Add to cart</a>
+            </div>
+        </div>
+    </div>
 </div>
 <ng-template #loading>
     <p class="text-center text-light">
-        Загрузка
+        Загрузка...
     </p>
 </ng-template>
+

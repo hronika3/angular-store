@@ -9,41 +9,41 @@ import {EditPageComponent} from './edit-page/edit-page.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {AuthService} from './shared/services/auth.service';
 import {SharedModule} from './shared/shared.module';
-import { CatalogPageComponent } from './catalog-page/catalog-page.component';
+import {CatalogPageComponent} from './catalog-page/catalog-page.component';
 import {AuthGuard} from './shared/services/auth.guard';
 import {SortPipe} from './shared/components/pipes/sort.pipe';
 
 
 @NgModule({
-  declarations: [
-    AdminLayoutComponent,
-    LoginPageComponent,
-    DashboardPageComponent,
-    CreatePageComponent,
-    EditPageComponent,
-    CatalogPageComponent,
-    SortPipe
-  ],
-  imports: [
-    CommonModule,
-    FormsModule,
-    ReactiveFormsModule,
-    SharedModule,
-    RouterModule.forChild([
-      {
-        path: '', component: AdminLayoutComponent, children: [
-          {path: '', redirectTo: '/admin/login', pathMatch: 'full'},
-          {path: 'login', component: LoginPageComponent},
-          {path: 'dashboard', component: DashboardPageComponent, canActivate: [AuthGuard]},
-          {path: 'create', component: CreatePageComponent, canActivate: [AuthGuard]},
-          {path: 'catalog', component: CatalogPageComponent, canActivate: [AuthGuard]},
-          {path: 'product/:id/edit', component: EditPageComponent, canActivate: [AuthGuard]}
-        ]
-      }
-    ])
-  ],
-  exports: [RouterModule],
-  providers: [AuthService, AuthGuard]
+    declarations: [
+        AdminLayoutComponent,
+        LoginPageComponent,
+        DashboardPageComponent,
+        CreatePageComponent,
+        EditPageComponent,
+        CatalogPageComponent,
+        SortPipe
+    ],
+    imports: [
+        CommonModule,
+        FormsModule,
+        ReactiveFormsModule,
+        SharedModule,
+        RouterModule.forChild([
+            {
+                path: '', component: AdminLayoutComponent, children: [
+                    {path: '', redirectTo: '/admin/login', pathMatch: 'full'},
+                    {path: 'login', component: LoginPageComponent},
+                    {path: 'dashboard', component: DashboardPageComponent, canActivate: [AuthGuard]},
+                    {path: 'create', component: CreatePageComponent, canActivate: [AuthGuard]},
+                    {path: 'catalog', component: CatalogPageComponent, canActivate: [AuthGuard]},
+                    {path: 'product/:id/edit', component: EditPageComponent, canActivate: [AuthGuard]}
+                ]
+            }
+        ])
+    ],
+    exports: [RouterModule, SortPipe],
+    providers: [AuthService, AuthGuard]
 })
 export class AdminModule {
 

@@ -24,10 +24,13 @@
 
     <div class="form-control">
         <label>Описание:</label>
-        <quill-editor formControlName="text"></quill-editor>
+        <input id="text" type="text" formControlName="text" >
     </div>
 
-
+    <div class="form-control">
+        <label>Картинка:</label>
+        <input type="text" formControlName="image">
+    </div>
 
     <div class="form-control">
         <label>Цена: </label>
@@ -40,3 +43,8 @@
             [disabled]="form.invalid"
     >Применить</button>
 </form>
+
+<!--<div class="form-control">
+    <label>Картинка:</label>
+    <quill-editor formControlName="image"></quill-editor>
+</div>-->

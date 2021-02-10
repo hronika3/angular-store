@@ -22,7 +22,8 @@ export class EditPageComponent implements OnInit {
         title: '',
         category: '',
         text: '',
-        cost: ''
+        cost: '',
+        image: ''
     };
 
     productSave: Product;
@@ -38,8 +39,10 @@ export class EditPageComponent implements OnInit {
                 title: product.title,
                 category: product.category,
                 text: product.text,
-                cost: product.cost
+                cost: product.cost,
+                image: product.image
             } as Product;
+            console.log(product.image);
         });
     }
 
