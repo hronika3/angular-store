@@ -5,6 +5,8 @@ import {HomePageComponent} from './home-page/home-page.component';
 import {ProductPageComponent} from './product-page/product-page.component';
 import {CartComponent} from './shared/components/cart/cart.component';
 import {RegisterPageComponent} from './register-page/register-page.component';
+import {ProfilePageComponent} from './profile-page/profile-page.component';
+import {AuthGuard} from './admin/shared/services/auth.guard';
 
 
 const routes: Routes = [
@@ -13,8 +15,9 @@ const routes: Routes = [
             {path: '', redirectTo: '/', pathMatch: 'full'},
             {path: '', component: HomePageComponent},
             {path: 'product/:id', component: ProductPageComponent},
-            {path: 'cart', component: CartComponent},
-            {path: 'register', component: RegisterPageComponent}
+            {path: 'cart', component: CartComponent, canActivate: [AuthGuard]},
+            {path: 'register', component: RegisterPageComponent},
+            {path: 'profile', component: ProfilePageComponent, canActivate: [AuthGuard]}
         ]
     },
     {

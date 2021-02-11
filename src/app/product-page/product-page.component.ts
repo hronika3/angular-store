@@ -3,6 +3,7 @@ import {ProductsService} from '../admin/shared/products.service';
 import {ActivatedRoute, Params} from '@angular/router';
 import {Product} from '../shared/interfaces';
 import {switchMap} from 'rxjs/operators';
+import {AuthService} from '../admin/shared/services/auth.service';
 
 @Component({
     selector: 'app-product-page',
@@ -13,7 +14,8 @@ export class ProductPageComponent implements OnInit {
 
     constructor(
         private productService: ProductsService,
-        private route: ActivatedRoute
+        private route: ActivatedRoute,
+        public auth: AuthService
     ) {
     }
 

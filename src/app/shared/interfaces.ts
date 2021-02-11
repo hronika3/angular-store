@@ -5,6 +5,14 @@ export interface User {
     returnSecureToken?: boolean;
 }
 
+export interface LoginUser {
+    uid: string;
+    email: string;
+    displayName: string;
+    photoURL: string;
+    emailVerified: boolean;
+}
+
 export interface FbAuthResponse {
     idToken: string;
     expiresIn: string;

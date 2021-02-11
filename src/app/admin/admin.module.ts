@@ -12,6 +12,10 @@ import {SharedModule} from './shared/shared.module';
 import {CatalogPageComponent} from './catalog-page/catalog-page.component';
 import {AuthGuard} from './shared/services/auth.guard';
 import {SortPipe} from './shared/components/pipes/sort.pipe';
+import {AngularFireModule} from '@angular/fire';
+import {AngularFireAuthModule} from '@angular/fire/auth';
+import {AngularFirestoreModule} from '@angular/fire/firestore';
+import {environment, firebaseConfig} from '../../environments/environment';
 
 
 @NgModule({
@@ -29,6 +33,9 @@ import {SortPipe} from './shared/components/pipes/sort.pipe';
         FormsModule,
         ReactiveFormsModule,
         SharedModule,
+        AngularFireAuthModule,
+        AngularFireModule.initializeApp(firebaseConfig),
+        AngularFirestoreModule,
         RouterModule.forChild([
             {
                 path: '', component: AdminLayoutComponent, children: [

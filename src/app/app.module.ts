@@ -13,8 +13,10 @@ import {CartComponent} from './shared/components/cart/cart.component';
 import {ReactiveFormsModule} from '@angular/forms';
 import {AdminModule} from './admin/admin.module';
 import {CartMenuComponent} from './shared/components/cart-menu/cart-menu.component';
-import { RegisterPageComponent } from './register-page/register-page.component';
-import { RegisterFormComponent } from './shared/components/register-form/register-form.component';
+import {RegisterPageComponent} from './register-page/register-page.component';
+import {RegisterFormComponent} from './shared/components/register-form/register-form.component';
+import {TestLoginComponent} from './test-login/test-login.component';
+import { ProfilePageComponent } from './profile-page/profile-page.component';
 
 @NgModule({
     declarations: [
@@ -26,7 +28,9 @@ import { RegisterFormComponent } from './shared/components/register-form/registe
         CartComponent,
         CartMenuComponent,
         RegisterPageComponent,
-        RegisterFormComponent
+        RegisterFormComponent,
+        TestLoginComponent,
+        ProfilePageComponent
     ],
     imports: [
         BrowserModule,

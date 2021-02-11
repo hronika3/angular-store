@@ -4,6 +4,7 @@ import {Subscription} from 'rxjs';
 import {ProductsService} from '../admin/shared/products.service';
 import {CartService} from '../shared/services/cart.service';
 import {ActivatedRoute} from '@angular/router';
+import {AuthService} from '../admin/shared/services/auth.service';
 
 @Component({
     selector: 'app-home-page',
@@ -15,11 +16,11 @@ export class HomePageComponent implements OnInit, OnDestroy {
     products: Product[] = [];
     pSub: Subscription;
     dSub: Subscription;
-
     constructor(
         private productService: ProductsService,
         private route: ActivatedRoute,
-        private cartService: CartService
+        private cartService: CartService,
+        public auth: AuthService
     ) {
     }
 

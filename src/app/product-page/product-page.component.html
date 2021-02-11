@@ -8,7 +8,7 @@
             <div class="description-label">Описание</div>
             <div class="product-description">{{productData.text}}</div>
         </div>
-        <span class="price">{{productData.cost}}$</span>
-        <button class="button">В корзину</button>
+        <span class="price">Price: {{productData.cost}}$</span>
+        <button class="button" *ngIf="auth.isAuthenteticated()">В корзину</button>
     </div>
 </div>

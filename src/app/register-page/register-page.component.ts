@@ -53,13 +53,18 @@ export class RegisterPageComponent implements OnInit {
 
         this.submitted = true;
 
-        this.auth.register(user).subscribe(() => {
+        this.auth.register(user).then(() => {
+            this.form.reset();
+            this.submitted = false;
+        });
+
+       /* this.auth.register(user).subscribe(() => {
             this.form.reset();
             this.router.navigate(['']);
             this.submitted = false;
         }, () => {
             this.submitted = false;
-        });
+        });*/
     }
 
 }

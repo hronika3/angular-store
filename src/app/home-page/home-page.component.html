@@ -6,9 +6,9 @@
                 <h3>{{product.title}}</h3>
                 <span class="price">{{product.cost | currency}}</span>
                 <a [routerLink]="['/product',product.id]" class="button">Просмотр</a>
-                <p class="button">|</p>
+                <p class="button" *ngIf="auth.isAuthenteticated()">|</p>
                 <a type="button" class="button"
-                        (click)="addToCart(product)"> Add to cart</a>
+                        (click)="addToCart(product)" *ngIf="auth.isAuthenteticated()"> Add to cart</a>
             </div>
         </div>
     </div>

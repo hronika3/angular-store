@@ -42,6 +42,12 @@
         </div>
     </div>
 
+    <div class="formGroup">
+        <button type="button" class="btn btn-block btn-danger" (click)="auth.GoogleAuth()">
+            Continue with Google
+        </button>
+    </div>
+
     <button type="submit"
             class="btn btn-dark"
             [disabled]="form.invalid || submitted === true"

@@ -25,6 +25,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.15.2",
     "@ng-bootstrap/ng-bootstrap": "^5.3.1",
     "bootstrap": "^4.6.0",
+    "firebase": "^8.2.6",
     "jquery": "^3.5.1",
     "ngx-bootstrap": "^6.2.0",
     "ngx-quill": "^13.0.1",
@@ -32,8 +33,7 @@
     "rxjs": "~6.6.3",
     "sweetalert2": "^10.13.0",
     "tslib": "^2.0.0",
-    "zone.js": "~0.11.3",
-    "firebase": "^7.0 || ^8.0"
+    "zone.js": "~0.11.3"
   },
   "devDependencies": {
     "@angular-devkit/architect": ">= 0.900 < 0.1200",
