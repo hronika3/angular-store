@@ -8,7 +8,6 @@ import {RegisterPageComponent} from './register-page/register-page.component';
 import {ProfilePageComponent} from './profile-page/profile-page.component';
 import {AuthGuard} from './admin/shared/services/auth.guard';
 
-
 const routes: Routes = [
     {
         path: '', component: MainLayoutComponent, children: [

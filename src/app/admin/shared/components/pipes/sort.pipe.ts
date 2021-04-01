@@ -5,28 +5,27 @@ import {Product} from '../../../../shared/interfaces';
     name: 'sortProducts'
 })
 export class SortPipe implements PipeTransform {
-    transform(products: Product[], sortName = '', direction = true): Product[] {
+    public transform(products: Product[], sortName: string = '', direction: boolean = true): Product[] {
         if (!sortName.trim()) {
             return products;
         }
         if (direction){
-            return products.sort(this.byFieldDown(sortName));
+            return products/*.sort(this.byFieldDown(sortName))*/;
         }
-        return products.sort(this.byFieldUp(sortName));
+        return products/*.sort(this.byFieldUp(sortName))*/;
     }
 
-    byFieldUp(field) {
+    /*public byFieldUp(field: string): (a: Product[], b: Product[]) => number {
         if (field === 'cost') {
             return (a, b) => b[field] - a[field];
         }
         return (a, b) => a[field] > b[field] ? 1 : -1;
     }
 
-    byFieldDown(field) {
+    public byFieldDown(field: string): (a: Product[], b: Product[]) => number {
         if (field === 'cost') {
             return (a, b) => a[field] - b[field];
         }
         return (a, b) => a[field] < b[field] ? 1 : -1;
-    }
-
+    }*/
 }

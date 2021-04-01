@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import {Router} from '@angular/router';
+import {Component, OnInit} from '@angular/core';
 import {AuthService} from '../admin/shared/services/auth.service';
 
 @Component({
@@ -9,10 +8,9 @@ import {AuthService} from '../admin/shared/services/auth.service';
 })
 export class ProfilePageComponent implements OnInit {
 
-  constructor(private router: Router,
-              public auth: AuthService) { }
+  constructor(public auth: AuthService) { }
 
-  ngOnInit(): void {
+  public ngOnInit(): void {
   }
 
 }

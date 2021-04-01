@@ -4,9 +4,11 @@ import {CartComponent} from './cart.component';
 import {CartService} from '../../services/cart.service';
 import {FormBuilder, Validators} from '@angular/forms';
 import {EMPTY, Observable, throwError} from 'rxjs';
+import {AuthService} from '../../../admin/shared/services/auth.service';
 
 describe('CartComponent', () => {
     let service: CartService;
+    let auth: AuthService;
     let component: CartComponent;
     const order = {
         products: [1, 2],
@@ -33,7 +35,8 @@ describe('CartComponent', () => {
 
     beforeEach(() => {
         service = new CartService(null);
-        component = new CartComponent(mockCartService, new FormBuilder());
+        auth = new AuthService(null, null, null, null);
+        component = new CartComponent(mockCartService, new FormBuilder(), auth);
         component.checkoutForm.patchValue({
             firstName: 'testFName',
             lastName: 'testLName',
@@ -71,4 +74,4 @@ describe('CartComponent', () => {
         expect(component.checkoutForm.get('firstName').value).toBe('testFName');
     });
 });
-//debug, testBed, git, brouser
+// debug, testBed, git, brouser

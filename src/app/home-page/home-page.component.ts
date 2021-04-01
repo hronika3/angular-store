@@ -13,9 +13,9 @@ import {AuthService} from '../admin/shared/services/auth.service';
 })
 export class HomePageComponent implements OnInit, OnDestroy {
 
-    products: Product[] = [];
-    pSub: Subscription;
-    dSub: Subscription;
+    public products: Product[] = [];
+    public pSub: Subscription;
+    public dSub: Subscription;
     constructor(
         private productService: ProductsService,
         private route: ActivatedRoute,
@@ -24,17 +24,17 @@ export class HomePageComponent implements OnInit, OnDestroy {
     ) {
     }
 
-    addToCart(product) {
-        this.cartService.addToCart(product);
+    public addToCart(product: Product) {
+        this.cartService.addToCartUser(product, this.auth.userState.uid).subscribe();
     }
 
-    ngOnInit() {
+    public ngOnInit() {
         this.pSub = this.productService.getAll().subscribe(products => {
             this.products = products;
         });
     }
 
-    ngOnDestroy() {
+    public ngOnDestroy() {
         if (this.pSub) {
             this.pSub.unsubscribe();
         }

@@ -19,18 +19,18 @@ export class ProductPageComponent implements OnInit {
     ) {
     }
 
-    productData: Product;
+    public productData: Product;
 
-    ngOnInit() {
+    public ngOnInit() {
         this.route.params.pipe(
             switchMap((params: Params) => {
-                return this.productService.getById(params['id']);
+                return this.productService.getById(params.id);
             })
         ).subscribe((product: Product) => {
             this.productData = product;
         });
     }
 
-    submit() {
+    public submit() {
     }
 }

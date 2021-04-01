@@ -8,13 +8,12 @@ import {ProductsService} from '../shared/products.service';
     styleUrls: ['./create-page.component.scss']
 })
 
-
 export class CreatePageComponent implements OnInit {
 
     constructor(private productService: ProductsService) {
     }
 
-    productData: Product = {
+    public productData: Product = {
         title: '',
         category: '',
         text: '',
@@ -22,15 +21,12 @@ export class CreatePageComponent implements OnInit {
         image: ''
     };
 
-    ngOnInit() {
+    public ngOnInit() {
 
     }
 
-    change(event) {
-        console.log(event);
+    public change(event: Product): void {
         this.productService.create(event).subscribe();
     }
 
-
 }
-

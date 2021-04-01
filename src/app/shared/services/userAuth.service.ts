@@ -1,3 +1,4 @@
+/*
 import {Injectable} from '@angular/core';
 import {HttpClient, HttpErrorResponse} from '@angular/common/http';
 import {AngularFireAuth} from '@angular/fire/auth';
@@ -8,9 +9,8 @@ import {Router} from '@angular/router';
 @Injectable()
 
 export class UserAuthService {
-    user: User;
-    result;
-
+    public user: User;
+    public result;
 
     constructor(
         private http: HttpClient,
@@ -27,28 +27,28 @@ export class UserAuthService {
         });
     }
 
-    login(email: string, password: string) {
+    public login(email: string, password: string) {
         this.result = firebase.auth().signInWithEmailAndPassword(email, password);
         this.router.navigate(['/admin', 'dashboard']);
     }
 
-    logout() {
+    public logout() {
         firebase.auth().signOut();
         localStorage.removeItem('user');
         this.router.navigate(['/admin', 'login']);
     }
 
-    register(email: string, password: string) {
+    public register(email: string, password: string) {
         this.result = firebase.auth().createUserWithEmailAndPassword(email, password);
         this.sendEmailVerification();
     }
 
-    sendEmailVerification() {
+    public sendEmailVerification() {
         firebase.auth().currentUser.sendEmailVerification();
         this.router.navigate(['/admin', 'verify-email']);
     }
 
-    sendPasswordResetEmail(passwordResetEmail: string) {
+    public sendPasswordResetEmail(passwordResetEmail: string) {
         return firebase.auth().sendPasswordResetEmail(passwordResetEmail);
     }
 
@@ -57,3 +57,4 @@ export class UserAuthService {
         return user !== null;
     }
 }
+*/

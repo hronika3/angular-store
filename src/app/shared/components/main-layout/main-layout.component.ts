@@ -9,17 +9,17 @@ import {LoginUser} from '../../interfaces';
     styleUrls: ['./main-layout.component.scss']
 })
 export class MainLayoutComponent implements OnInit {
-    user: LoginUser;
+    public user: LoginUser;
 
     constructor(public auth: AuthService,
                 private router: Router) {
     }
 
-    ngOnInit() {
+    public ngOnInit() {
 
     }
 
-    logout(event: Event) {
+    public logout(event: Event) {
         event.preventDefault();
         this.auth.logout();
         this.router.navigate(['/admin', 'login']);

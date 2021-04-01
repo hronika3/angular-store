@@ -8,15 +8,14 @@ import {HomePageComponent} from './home-page/home-page.component';
 import {SharedModule} from './admin/shared/shared.module';
 import {ProductPageComponent} from './product-page/product-page.component';
 import {ProductComponent} from './shared/components/product/product.component';
-import {NgbPaginationModule, NgbAlertModule} from '@ng-bootstrap/ng-bootstrap';
+import {NgbAlertModule, NgbPaginationModule} from '@ng-bootstrap/ng-bootstrap';
 import {CartComponent} from './shared/components/cart/cart.component';
 import {ReactiveFormsModule} from '@angular/forms';
 import {AdminModule} from './admin/admin.module';
 import {CartMenuComponent} from './shared/components/cart-menu/cart-menu.component';
 import {RegisterPageComponent} from './register-page/register-page.component';
 import {RegisterFormComponent} from './shared/components/register-form/register-form.component';
-import {TestLoginComponent} from './test-login/test-login.component';
-import { ProfilePageComponent } from './profile-page/profile-page.component';
+import {ProfilePageComponent} from './profile-page/profile-page.component';
 
 @NgModule({
     declarations: [
@@ -29,7 +28,6 @@ import { ProfilePageComponent } from './profile-page/profile-page.component';
         CartMenuComponent,
         RegisterPageComponent,
         RegisterFormComponent,
-        TestLoginComponent,
         ProfilePageComponent
     ],
     imports: [

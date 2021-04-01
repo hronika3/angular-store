@@ -1,11 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
-import {ActivatedRoute, Params, Router} from '@angular/router';
+import {ActivatedRoute, Router} from '@angular/router';
 import {User} from '../shared/interfaces';
-import {UserAuthService} from '../shared/services/userAuth.service';
 import {AuthService} from '../admin/shared/services/auth.service';
-import firebase from 'firebase';
-import {AngularFireAuth} from '@angular/fire/auth';
 
 @Component({
     selector: 'app-register-page',
@@ -14,20 +11,17 @@ import {AngularFireAuth} from '@angular/fire/auth';
 })
 export class RegisterPageComponent implements OnInit {
 
-    form: FormGroup;
-    submitted = false;
-    message: string;
-    user: User;
+    public form: FormGroup;
+    public submitted = false;
+    public message: string;
+    public user: User;
 
     constructor(
-        public auth: AuthService,
-        private router: Router,
-        private route: ActivatedRoute
+        public auth: AuthService
     ) {
     }
 
-    ngOnInit() {
-
+    public ngOnInit() {
         this.form = new FormGroup({
             email: new FormControl(null, [
                 Validators.required,
@@ -40,7 +34,7 @@ export class RegisterPageComponent implements OnInit {
         });
     }
 
-    submit() {
+    public submit() {
         if (this.form.invalid) {
             return;
         }

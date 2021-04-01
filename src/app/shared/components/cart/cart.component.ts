@@ -1,9 +1,9 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import {CartService} from '../../services/cart.service';
-import {Order, Product} from '../../interfaces';
+import {CustomerData, Order, Product} from '../../interfaces';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
-import {catchError, map} from 'rxjs/operators';
-import {Subscription, throwError} from 'rxjs';
+import {Subscription} from 'rxjs';
+import {AuthService} from '../../../admin/shared/services/auth.service';
 
 @Component({
     selector: 'app-cart',
@@ -11,19 +11,22 @@ import {Subscription, throwError} from 'rxjs';
     styleUrls: ['./cart.component.scss']
 })
 export class CartComponent implements OnInit, OnDestroy {
-    products: Product[];
-    order: Order;
-    checkoutForm: FormGroup;
-    direction = false;
-    sortStr = 'category';
-    orderSub: Subscription;
-    errors = false;
+    public products: Product[];
+    public order: Order;
+    public checkoutForm: FormGroup;
+    public direction = false;
+    public sortStr = 'category';
+    public orderSub: Subscription;
+    public errors = false;
+    public id: string[];
+    public uid: string = this.auth.userState.uid;
+    private pSub: Subscription;
 
     constructor(
         private cartService: CartService,
-        private formBuilder: FormBuilder
+        private formBuilder: FormBuilder,
+        private auth: AuthService
     ) {
-        this.products = this.cartService.getProducts();
 
         this.checkoutForm = this.formBuilder.group({
             firstName: ['', Validators.required],
@@ -32,18 +35,23 @@ export class CartComponent implements OnInit, OnDestroy {
         });
     }
 
-    ngOnInit(): void {
+    public ngOnInit(): void {
+        this.pSub = this.cartService.getAllCartUser(this.auth.userState.uid).subscribe(products => {
+            this.products = products;
+            console.log(this.products);
+        });
     }
 
-    onSubmit(customerData) {
+    public onSubmit(customerData: CustomerData) {
         if (this.checkoutForm.invalid) {
             return;
         }
         this.order = {
-            products: this.products.map(item => item.id),
+            products: this.products.map(item => item.id),                     // *****
             firstName: customerData.firstName,
             lastName: customerData.lastName,
-            address: customerData.address
+            address: customerData.address,
+            uid: this.uid
         };
         this.orderSub = this.cartService.saveOrder(this.order).subscribe(
             result => {
@@ -53,25 +61,28 @@ export class CartComponent implements OnInit, OnDestroy {
                 console.log(error);
             },
             () => {
-                this.cartService.clearCart();
+                this.cartService.clearCart(this.auth.userState.uid).subscribe();
                 this.checkoutForm.reset();
             }
         );
-        console.log('test');
     }
 
-    sort(sortName, direction) {
+    public sort(sortName: string, direction: boolean): void {
         this.sortStr = sortName;
         this.direction = direction;
     }
 
-    remove(idx) {
-        this.products.splice(idx, 1);
+    public remove(idx: number): void {
+        this.id = this.products.map(item => item.id);
+        this.cartService.deleteCartById(this.id[0], this.auth.userState.uid).subscribe();
     }
 
-    ngOnDestroy() {
+    public ngOnDestroy() {
         if (this.orderSub) {
             this.orderSub.unsubscribe();
+        }
+        if (this.pSub) {
+            this.pSub.unsubscribe();
         }
     }
 }

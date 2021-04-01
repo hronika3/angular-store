@@ -4,7 +4,6 @@ import {Product} from '../../shared/interfaces';
 import {fromEvent, Subscription} from 'rxjs';
 import {debounceTime, distinctUntilChanged, filter, tap} from 'rxjs/operators';
 
-
 @Component({
     selector: 'app-dashboard-page',
     templateUrl: './dashboard-page.component.html',
@@ -12,32 +11,32 @@ import {debounceTime, distinctUntilChanged, filter, tap} from 'rxjs/operators';
 })
 export class DashboardPageComponent implements OnInit, OnDestroy, AfterViewChecked {
 
-    @ViewChild('search', {static: true}) search: ElementRef<HTMLInputElement>;
+    @ViewChild('search', {static: true}) public search: ElementRef<HTMLInputElement>;
 
-    searchStr = '';
-    products: Product[] = [];
-    pSub: Subscription;
-    dSub: Subscription;
-    sSub: Subscription;
-    direction = false;
-    sortStr = 'category';
+    public searchStr: string = '';
+    public products: Product[] = [];
+    public pSub: Subscription;
+    public dSub: Subscription;
+    public sSub: Subscription;
+    public direction: boolean = false;
+    public sortStr: string = 'category';
 
     constructor(private productService: ProductsService) {
     }
 
-    sort(sortName, direction) {
+    public sort(sortName: string, direction: boolean): void {
         this.sortStr = sortName;
         this.direction = direction;
     }
 
-    ngAfterViewChecked() {
+    public ngAfterViewChecked() {
         if (!this.sSub) {
             this.sSub = fromEvent(this.search.nativeElement, 'keyup')
                 .pipe(
                     filter(Boolean),
                     debounceTime(150),
                     distinctUntilChanged(),
-                    tap(async (event: KeyboardEvent) => {
+                    tap(async () => {
                         console.log(`value is ${this.search.nativeElement.value}`);
                         this.pSub = this.productService.getByTitle(this.searchStr).subscribe(products => {
                             this.products = products;
@@ -48,19 +47,19 @@ export class DashboardPageComponent implements OnInit, OnDestroy, AfterViewCheck
         }
     }
 
-    remove(id: string) {
+    public remove(id: string): void{
         this.dSub = this.productService.remove(id).subscribe(() => {
             this.products = this.products.filter(products => products.id !== id);
         });
     }
 
-    ngOnInit() {
+    public ngOnInit() {
         this.pSub = this.productService.getAll().subscribe(products => {
             this.products = products;
         });
     }
 
-    ngOnDestroy() {
+    public ngOnDestroy() {
         if (this.pSub) {
             this.pSub.unsubscribe();
         }

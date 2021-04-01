@@ -11,9 +11,9 @@ import {ActivatedRoute, Params, Router} from '@angular/router';
 })
 export class LoginPageComponent implements OnInit {
 
-    form: FormGroup;
-    submitted = false;
-    message: string;
+    public form: FormGroup;
+    public submitted = false;
+    public message: string;
 
     constructor(
         public auth: AuthService,
@@ -22,9 +22,10 @@ export class LoginPageComponent implements OnInit {
     ) {
     }
 
-    ngOnInit() {
+    public ngOnInit() {
+
         this.route.queryParams.subscribe((params: Params) => {
-            if (params['sessionEnd']) {
+            if (params.sessionEnd) {
                 this.message = 'Пожалуйста, введите данные';
             }
         });
@@ -41,7 +42,7 @@ export class LoginPageComponent implements OnInit {
         });
     }
 
-    submit() {
+    public submit() {
         if (this.form.invalid) {
             return;
         }
@@ -68,5 +69,3 @@ export class LoginPageComponent implements OnInit {
     }
 
 }
-
-

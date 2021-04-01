@@ -10,7 +10,17 @@ export class AuthGuard implements CanActivate {
                 private router: Router) {
     }
 
-    canActivate(
+    public canActivate(next: ActivatedRouteSnapshot,
+                       state: RouterStateSnapshot):
+        Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
+        console.log('this.auth.isAuthenteticated()', this.auth.isAuthenteticated());
+        if (this.auth.isAuthenteticated()) {
+            console.log('guard true');
+            return true;
+        }
+        this.router.navigate(['/admin', 'login']);
+        return false;
+
         /*route: ActivatedRouteSnapshot,
         state: RouterStateSnapshot
     ): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
@@ -24,14 +34,5 @@ export class AuthGuard implements CanActivate {
                 }
             });
         }*/
-
-        next: ActivatedRouteSnapshot,
-        state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
-        console.log('this.auth.isAuthenteticated()', this.auth.isAuthenteticated())
-        if (this.auth.isAuthenteticated()) {
-            console.log('guard true');
-            return true;
-        }
-        this.router.navigate(['/admin', 'login']);
     }
 }

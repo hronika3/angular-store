@@ -1,9 +1,8 @@
-import {Component, OnDestroy, OnInit} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {ProductsService} from '../shared/products.service';
 import {Product} from '../../shared/interfaces';
 import {ActivatedRoute, Params} from '@angular/router';
 import {switchMap} from 'rxjs/operators';
-import {Subscription} from 'rxjs';
 
 @Component({
     selector: 'app-edit-page',
@@ -12,26 +11,25 @@ import {Subscription} from 'rxjs';
 })
 export class EditPageComponent implements OnInit {
 
-    constructor(
-        private productService: ProductsService,
-        private route: ActivatedRoute
-    ) {
-    }
-
-    productDataEdit: Product = {
+    public productDataEdit: Product = {
         title: '',
         category: '',
         text: '',
         cost: '',
         image: ''
     };
+    public productSave: Product;
 
-    productSave: Product;
+    constructor(
+        private productService: ProductsService,
+        private route: ActivatedRoute
+    ) {
+    }
 
-    ngOnInit() {
+    public ngOnInit() {
         this.route.params.pipe(
             switchMap((params: Params) => {
-                return this.productService.getById(params['id']);
+                return this.productService.getById(params.id);
             })
         ).subscribe((product: Product) => {
             this.productSave = product;
@@ -46,15 +44,11 @@ export class EditPageComponent implements OnInit {
         });
     }
 
-    submit() {
-    }
-
-    change(event) {
+    public change(event: Product) {
         this.productService.update({
             id: this.productSave.id,
             ...event
         }).subscribe();
     }
-
 
 }

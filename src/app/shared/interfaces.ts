@@ -11,6 +11,18 @@ export interface LoginUser {
     displayName: string;
     photoURL: string;
     emailVerified: boolean;
+    roles?: Roles;
+}
+
+export interface CustomerData {
+    firstName: string;
+    lastName: string;
+    address: string;
+}
+
+export interface Roles {
+    admin?: boolean;
+    user?: boolean;
 }
 
 export interface FbAuthResponse {
@@ -18,23 +30,29 @@ export interface FbAuthResponse {
     expiresIn: string;
 }
 
+export interface UserCart {
+    productId: string
+}
+
 export interface Product {
-    id?: string
-    title: string
-    category: string
-    text: string
-    cost: string
-    image: string
+    id?: string;
+    title: string;
+    category: string;
+    text: string;
+    cost: string;
+    image: string;
+    cartId?: string;
 }
 
 export interface FbCreateResponse {
-    name: string
+    name: string;
 }
 
 export interface Order {
-    id?: string
-    products: any
-    firstName: string
-    lastName: string
-    address: string
+    uid: string;
+    id?: string;
+    products: any;
+    firstName: string;
+    lastName: string;
+    address: string;
 }

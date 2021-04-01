@@ -1,14 +1,12 @@
 import {Injectable, NgZone} from '@angular/core';
-import {HttpClient, HttpErrorResponse} from '@angular/common/http';
-import {FbAuthResponse, FbCreateResponse, LoginUser, User} from '../../../shared/interfaces';
-import {Observable, Subject, throwError} from 'rxjs';
-import {environment} from '../../../../environments/environment';
-import {catchError, map, tap} from 'rxjs/operators';
+import {FbAuthResponse, LoginUser, User} from '../../../shared/interfaces';
+import {Subject} from 'rxjs';
+import {Router} from '@angular/router';
 import {AngularFirestore, AngularFirestoreDocument} from '@angular/fire/firestore';
 import {AngularFireAuth} from '@angular/fire/auth';
-import {Router} from '@angular/router';
 import firebase from 'firebase';
 import auth = firebase.auth;
+import GoogleAuthProvider = firebase.auth.GoogleAuthProvider;
 
 @Injectable({
     providedIn: 'root'
@@ -16,10 +14,9 @@ import auth = firebase.auth;
 
 export class AuthService {
     public error$: Subject<string> = new Subject<string>();
-    userState: any;
+    public userState: LoginUser;
 
-    constructor(private http: HttpClient,
-                public afs: AngularFirestore,
+    constructor(public afs: AngularFirestore,
                 public afAuth: AngularFireAuth,
                 public router: Router,
                 public ngZone: NgZone) {
@@ -44,20 +41,14 @@ export class AuthService {
         return localStorage.getItem('fb-token');
     }
 
-    login(user) {
-        /*user.returnSecureToken = true;
-        return this.http.post(`https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=${environment.apiKey}`, user)
-            .pipe(
-                tap(this.setToken),
-                catchError(this.handleError.bind(this))
-            );*/
+    public login(user: User): Promise<void> {
         user.returnSecureToken = true;
         return this.afAuth.signInWithEmailAndPassword(user.email, user.password)
             .then((result) => {
                 console.log('result ', result);
                 this.setToken({
                     idToken: result.user.uid,
-                    expiresIn: '360'
+                    expiresIn: '36000'          // Время действия логина
                 });
                 this.ngZone.run(() => {
                     this.router.navigate(['/admin', 'dashboard']);
@@ -66,9 +57,15 @@ export class AuthService {
             }).catch((error) => {
                 window.alert(error.message);
             });
+        /*user.returnSecureToken = true;
+        return this.http.post(`https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=${environment.apiKey}`, user)
+            .pipe(
+                tap(this.setToken),
+                catchError(this.handleError.bind(this))
+            );*/
     }
 
-    register(user: User) {
+    public register(user: User): Promise<void> {
         return this.afAuth.createUserWithEmailAndPassword(user.email, user.password)
             .then((result) => {
                 this.setUserData(result.user);
@@ -77,14 +74,17 @@ export class AuthService {
             });
     }
 
-    setUserData(user) {
+    public setUserData(user: LoginUser): Promise<void> {
         const userRef: AngularFirestoreDocument<any> = this.afs.doc(`users/${user.uid}`);
         const userState: LoginUser = {
             uid: user.uid,
             email: user.email,
             displayName: user.displayName,
             photoURL: user.photoURL,
-            emailVerified: !user.emailVerified
+            emailVerified: !user.emailVerified,
+            roles: {
+                user: true
+            }
         };
         console.log('userState', userRef);
         return userRef.set(userState, {
@@ -92,19 +92,18 @@ export class AuthService {
         });
     }
 
-    logout() {
+    public logout(): void{
         this.setToken(null);
         this.afAuth.signOut().then(() => {
         });
     }
 
-    GoogleAuth() {
+    public GoogleAuth(): Promise<void> {
         const googleAuth = new auth.GoogleAuthProvider();
-        console.log(googleAuth);
-        return this.AuthLogin(new auth.GoogleAuthProvider());
+        return this.AuthLogin(googleAuth);
     }
 
-    AuthLogin(provider) {
+    public AuthLogin(provider: GoogleAuthProvider): Promise<void> {
         return this.afAuth.signInWithPopup(provider)
             .then((result) => {
                 this.setToken({
@@ -120,27 +119,27 @@ export class AuthService {
             });
     }
 
-    ForgotPassword(passwordResetEmail) {
+    /*public ForgotPassword(passwordResetEmail) {
         return this.afAuth.sendPasswordResetEmail(passwordResetEmail)
             .then(() => {
                 window.alert('Password reset email sent, check your inbox.');
             }).catch((error) => {
                 window.alert(error);
             });
-    }
+    }*/
 
-    SendVerificationMail() {
+    /*public SendVerificationMail() {
         return this.afAuth.currentUser.then(u => u.sendEmailVerification())
             .then(() => {
                 this.router.navigate(['email-verification']);
             });
-    }
+    }*/
 
-    isAuthenteticated(): boolean {
+    public isAuthenteticated(): boolean {
         return !!this.token;
     }
 
-    private handleError(error: HttpErrorResponse) {
+    /*private handleError(error: HttpErrorResponse) {
         const {message} = error.error.error;
 
         switch (message) {
@@ -159,9 +158,9 @@ export class AuthService {
         }
 
         return throwError(error);
-    }
+    }*/
 
-    private setToken(response: FbAuthResponse | null) {
+    private setToken(response: FbAuthResponse | null): void {
         if (response) {
             const expDate = new Date(new Date().getTime() + +response.expiresIn * 1000);
             localStorage.setItem('fb-token', response.idToken);
@@ -170,14 +169,4 @@ export class AuthService {
             localStorage.clear();
         }
     }
-
-    /*register(user: User): Observable<User> {
-        return this.http.post(`${environment.fbDbUrl}/users.json`, user)
-            .pipe(map((response: FbCreateResponse) => {
-                return {
-                    id: response.name,
-                    ...user
-                };
-            }));
-    }*/
 }

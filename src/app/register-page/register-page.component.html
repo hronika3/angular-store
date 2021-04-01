@@ -1,6 +1,6 @@
+<div class="main-form">
 <form class="card" [formGroup]="form" (ngSubmit)="submit()">
     <h2>Регистрация</h2>
-    <h2>test@mail.ru</h2>
 
     <div class="alert alert-danger" *ngIf="auth.error$ | async as error">{{error}}</div>
 
@@ -53,3 +53,4 @@
             [disabled]="form.invalid || submitted === true"
     >Регистрация</button>
 </form>
+</div>

@@ -1,7 +1,6 @@
-import {Component, Input, OnChanges, OnInit, Output} from '@angular/core';
+import {Component, EventEmitter, Input, OnChanges, Output} from '@angular/core';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
 import {Product} from '../../../../shared/interfaces';
-import {EventEmitter} from '@angular/core';
 
 @Component({
     selector: 'app-edit-form',
@@ -9,17 +8,16 @@ import {EventEmitter} from '@angular/core';
     styleUrls: ['./edit-form.component.scss']
 })
 
-
 export class EditFormComponent implements OnChanges {
-    @Input() productData: Product;
-    @Output() newItemEvent = new EventEmitter();
+    @Input() public productData: Product;
+    @Output() public newItemEvent = new EventEmitter();
 
-    form: FormGroup;
+    public form: FormGroup;
 
     constructor() {
     }
 
-    ngOnChanges() {
+    public ngOnChanges() {
         this.form = new FormGroup({
             title: new FormControl(this.productData.title, Validators.required),
             category: new FormControl(this.productData.category, Validators.required),
@@ -29,7 +27,7 @@ export class EditFormComponent implements OnChanges {
         });
     }
 
-    submit() {
+    public submit() {
         if (this.form.invalid) {
             return;
         }
@@ -45,6 +43,5 @@ export class EditFormComponent implements OnChanges {
 
         this.form.reset();
     }
-
 
 }

@@ -17,7 +17,6 @@ import {AngularFireAuthModule} from '@angular/fire/auth';
 import {AngularFirestoreModule} from '@angular/fire/firestore';
 import {environment, firebaseConfig} from '../../environments/environment';
 
-
 @NgModule({
     declarations: [
         AdminLayoutComponent,

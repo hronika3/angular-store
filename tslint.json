@@ -46,7 +46,7 @@
       true,
       140
     ],
-    "member-access": false,
+    "member-access": true,
     "member-ordering": [
       true,
       {
@@ -58,7 +58,7 @@
         ]
       }
     ],
-    "no-consecutive-blank-lines": false,
+    "no-consecutive-blank-lines": true,
     "no-console": [
       true,
       "debug",
@@ -69,7 +69,7 @@
     ],
     "no-empty": false,
     "no-inferrable-types": [
-      true,
+      false,
       "ignore-params"
     ],
     "no-non-null-assertion": true,
@@ -151,5 +151,10 @@
   },
   "rulesDirectory": [
     "codelyzer"
+  ],
+  "typedef": [
+    true,
+    "call-signature",
+    "property-declaration"
   ]
 }
