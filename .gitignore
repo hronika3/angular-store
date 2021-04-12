@@ -1,9 +1,8 @@
 /node_modules/
-/.browserslistrc
-/angular.json
 /karma.conf.js
-/README.md
-/tsconfig.app.json
-/tsconfig.json
 /tsconfig.spec.json
-/tslint.json
+/.idea
+/.firebaserc
+/firebase.json
+/e2e/
+/images/
