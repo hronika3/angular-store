@@ -1,6 +1,6 @@
 import {AfterViewChecked, Component, ElementRef, OnDestroy, OnInit, ViewChild} from '@angular/core';
-import {ProductsService} from '../shared/products.service';
-import {Product} from '../../shared/interfaces';
+import {ProductsService} from '../../Shared/services/products.service';
+import {Product} from '../../Shared/interfaces';
 import {fromEvent, Subscription} from 'rxjs';
 import {debounceTime, distinctUntilChanged, filter, tap} from 'rxjs/operators';
 
@@ -38,7 +38,7 @@ export class DashboardPageComponent implements OnInit, OnDestroy, AfterViewCheck
                     distinctUntilChanged(),
                     tap(async () => {
                         console.log(`value is ${this.search.nativeElement.value}`);
-                        this.pSub = this.productService.getByTitle(this.searchStr).subscribe(products => {
+                        this.pSub = this.productService.getProductByTitle(this.searchStr).subscribe(products => {
                             this.products = products;
                         });
                     })
@@ -48,13 +48,13 @@ export class DashboardPageComponent implements OnInit, OnDestroy, AfterViewCheck
     }
 
     public remove(id: string): void{
-        this.dSub = this.productService.remove(id).subscribe(() => {
+        this.dSub = this.productService.removeProduct(id).subscribe(() => {
             this.products = this.products.filter(products => products.id !== id);
         });
     }
 
     public ngOnInit() {
-        this.pSub = this.productService.getAll().subscribe(products => {
+        this.pSub = this.productService.getAllProducts().subscribe(products => {
             this.products = products;
         });
     }

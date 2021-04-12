@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {ProductsService} from '../shared/products.service';
-import {Product} from '../../shared/interfaces';
+import {ProductsService} from '../../Shared/services/products.service';
+import {Product} from '../../Shared/interfaces';
 import {ActivatedRoute, Params} from '@angular/router';
 import {switchMap} from 'rxjs/operators';
 
@@ -29,7 +29,7 @@ export class EditPageComponent implements OnInit {
     public ngOnInit() {
         this.route.params.pipe(
             switchMap((params: Params) => {
-                return this.productService.getById(params.id);
+                return this.productService.getProductById(params.id);
             })
         ).subscribe((product: Product) => {
             this.productSave = product;
@@ -45,7 +45,7 @@ export class EditPageComponent implements OnInit {
     }
 
     public change(event: Product) {
-        this.productService.update({
+        this.productService.updateProduct({
             id: this.productSave.id,
             ...event
         }).subscribe();

@@ -5,13 +5,13 @@
 
   <ul *ngIf="auth.isAuthenteticated()">
     <li routerLinkActive="active">
-      <a [routerLink]="['/admin', 'dashboard']">Главная</a>
+      <a [routerLink]="['/Admin', 'dashboard']">Главная</a>
     </li>
     <li routerLinkActive="active">
-      <a [routerLink]="['/admin', 'create']">Добавить товар</a>
+      <a [routerLink]="['/Admin', 'create']">Добавить товар</a>
     </li>
     <li>
-      <a href="#" (click)="logout($event)">Выйти</a>
+      <a href="#" (click)="auth.logout($event)">Выйти</a>
     </li>
   </ul>
 </nav>

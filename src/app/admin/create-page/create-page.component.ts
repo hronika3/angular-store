@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {Product} from '../../shared/interfaces';
-import {ProductsService} from '../shared/products.service';
+import {Product} from '../../Shared/interfaces';
+import {ProductsService} from '../../Shared/services/products.service';
 
 @Component({
     selector: 'app-create-page',
@@ -26,7 +26,7 @@ export class CreatePageComponent implements OnInit {
     }
 
     public change(event: Product): void {
-        this.productService.create(event).subscribe();
+        this.productService.create_product(event).subscribe();
     }
 
 }

@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {AuthService} from '../../../admin/shared/services/auth.service';
+import {AuthService} from '../../services/auth.service';
 import {Router} from '@angular/router';
 import {LoginUser} from '../../interfaces';
 
@@ -19,10 +19,10 @@ export class MainLayoutComponent implements OnInit {
 
     }
 
-    public logout(event: Event) {
+    /*public logout(event: Event) {
         event.preventDefault();
         this.auth.logout();
-        this.router.navigate(['/admin', 'login']);
+        this.router.navigate(['login']);
     }
-
+*/
 }
