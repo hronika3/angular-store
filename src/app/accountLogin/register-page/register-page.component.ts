@@ -1,8 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
 import {ActivatedRoute, Router} from '@angular/router';
-import {User} from '../../Shared/interfaces';
-import {AuthService} from '../../Shared/services/auth.service';
+import {User} from '../../shared/interfaces';
+import {AuthService} from '../../shared/services/auth.service';
 
 @Component({
     selector: 'app-register-page',
@@ -51,14 +51,6 @@ export class RegisterPageComponent implements OnInit {
             this.form.reset();
             this.submitted = false;
         });
-
-       /* this.auth.register(user).subscribe(() => {
-            this.form.reset();
-            this.router.navigate(['']);
-            this.submitted = false;
-        }, () => {
-            this.submitted = false;
-        });*/
     }
 
 }

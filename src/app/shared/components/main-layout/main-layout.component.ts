@@ -11,18 +11,9 @@ import {LoginUser} from '../../interfaces';
 export class MainLayoutComponent implements OnInit {
     public user: LoginUser;
 
-    constructor(public auth: AuthService,
-                private router: Router) {
+    constructor(public auth: AuthService) {
     }
 
     public ngOnInit() {
-
     }
-
-    /*public logout(event: Event) {
-        event.preventDefault();
-        this.auth.logout();
-        this.router.navigate(['login']);
-    }
-*/
 }

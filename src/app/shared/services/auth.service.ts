@@ -115,46 +115,9 @@ export class AuthService {
             });
     }
 
-    /*public ForgotPassword(passwordResetEmail) {
-        return this.afAuth.sendPasswordResetEmail(passwordResetEmail)
-            .then(() => {
-                window.alert('Password reset email sent, check your inbox.');
-            }).catch((error) => {
-                window.alert(error);
-            });
-    }*/
-
-    /*public SendVerificationMail() {
-        return this.afAuth.currentUser.then(u => u.sendEmailVerification())
-            .then(() => {
-                this.router.navigate(['email-verification']);
-            });
-    }*/
-
-    public isAuthenteticated(): boolean {
+    public isAuthenticated(): boolean {
         return !!this.token;
     }
-
-    /*private handleError(error: HttpErrorResponse) {
-        const {message} = error.error.error;
-
-        switch (message) {
-            case 'INVALID_EMAIL':
-                this.error$.next('Неверный email');
-                break;
-            case 'INVALID_PASSWORD':
-                this.error$.next('Неверный пароль');
-                break;
-            case 'EMAIL_NOT_FOUND':
-                this.error$.next('Данный email не найден');
-                break;
-            default:
-                this.error$.next('Ошибка');
-                break;
-        }
-
-        return throwError(error);
-    }*/
 
     private setToken(response: FbAuthResponse | null): void {
         if (response) {

@@ -3,12 +3,12 @@
     <a routerLink="/">Angular Admin</a>
   </h1>
 
-  <ul *ngIf="auth.isAuthenteticated()">
+  <ul *ngIf="auth.isAuthenticated()">
     <li routerLinkActive="active">
-      <a [routerLink]="['/Admin', 'dashboard']">Главная</a>
+      <a [routerLink]="['/admin', 'dashboard']">Главная</a>
     </li>
     <li routerLinkActive="active">
-      <a [routerLink]="['/Admin', 'create']">Добавить товар</a>
+      <a [routerLink]="['/admin', 'create']">Добавить товар</a>
     </li>
     <li>
       <a href="#" (click)="auth.logout($event)">Выйти</a>

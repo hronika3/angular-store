@@ -1,11 +1,12 @@
-<div *ngIf="auth.isAuthenteticated(); then logTrue else logFalse" ></div>
+<div *ngIf="auth.isAuthenticated(); then logTrue else logFalse"></div>
 <div class="navbar navbar-expand-lg navbar-light bg-light">
 
     <ng-template #logTrue>
         <nav class="header">
             <button routerLink="/" class="btn btn-outline-dark">Angular store</button>
             <div class="main-layout-right">
-                <button type="button" class="btn btn-outline-dark" [routerLink]="['/admin', 'dashboard']">Admin page</button>
+                <button type="button" class="btn btn-outline-dark" [routerLink]="['/admin', 'dashboard']">Admin page
+                </button>
                 <button type="button" class="btn btn-outline-dark" routerLink="/profile">Profile</button>
                 <button type="button" class="btn btn-outline-dark" routerLink="/cart">Cart</button>
                 <button type="button" class="btn btn-outline-dark" (click)="auth.logout($event)">Выйти</button>
@@ -13,13 +14,13 @@
         </nav>
     </ng-template>
     <ng-template #logFalse>
-    <nav class="header">
-        <button routerLink="/" class="btn btn-outline-dark">Angular store</button>
-        <div class="main-layout-right">
-            <button type="button" class="btn btn-outline-dark" routerLink="/login">Login</button>
-            <button type="button" class="btn btn-outline-dark" routerLink="/register">Регистрация</button>
-        </div>
-    </nav>
+        <nav class="header">
+            <button routerLink="/" class="btn btn-outline-dark">Angular store</button>
+            <div class="main-layout-right">
+                <button type="button" class="btn btn-outline-dark" routerLink="/login">Login</button>
+                <button type="button" class="btn btn-outline-dark" routerLink="/register">Регистрация</button>
+            </div>
+        </nav>
     </ng-template>
 </div>
 

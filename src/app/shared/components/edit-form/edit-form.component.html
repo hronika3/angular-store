@@ -1,30 +1,23 @@
 <form [formGroup]="form" (ngSubmit)="submit()">
     <h1>Добавление товара</h1>
-    <div
-            class="form-control"
-    >
+    <div class="form-control">
         <label for="title">Название товара:</label>
-        <input id="title" type="text" formControlName="title" >
-        <div
-                class="text"
-        >
+        <input id="title" type="text" formControlName="title">
+        <div class="text">
         </div>
     </div>
 
-    <div
-            class="form-control"
-    >
+    <div class="form-control">
         <label for="category">Категория:</label>
-        <input id="category" type="text" formControlName="category" >
+        <input id="category" type="text" formControlName="category">
 
-        <div class="validation"
-        >
+        <div class="validation">
         </div>
     </div>
 
     <div class="form-control">
         <label>Описание:</label>
-        <input id="text" type="text" formControlName="text" >
+        <input id="text" type="text" formControlName="text">
     </div>
 
     <div class="form-control">
@@ -34,12 +27,11 @@
 
     <div class="form-control">
         <label>Цена: </label>
-        <input id="cost" type="text" formControlName="cost" >
+        <input id="cost" type="text" formControlName="cost">
     </div>
 
-    <button
-            type="submit"
+    <button type="submit"
             class="btn btn-block btn-dark"
             [disabled]="form.invalid"
-    >Применить</button>
+    > Применить </button>
 </form>
