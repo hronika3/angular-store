@@ -74,7 +74,7 @@ export class CartComponent implements OnInit, OnDestroy {
 
     public remove(idx: number): void {
         this.id = this.products.map(item => item.id);
-        this.cartService.deleteCartById(this.id[0], this.auth.userState.uid).subscribe();
+        this.cartService.deleteCartById(this.id[idx], this.auth.userState.uid).subscribe();
     }
 
     public ngOnDestroy() {

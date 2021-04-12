@@ -1,6 +1,6 @@
 import {AfterViewChecked, Component, ElementRef, OnDestroy, OnInit, ViewChild} from '@angular/core';
-import {ProductsService} from '../../Shared/services/products.service';
-import {Product} from '../../Shared/interfaces';
+import {ProductsService} from '../../shared/services/products.service';
+import {Product} from '../../shared/interfaces';
 import {fromEvent, Subscription} from 'rxjs';
 import {debounceTime, distinctUntilChanged, filter, tap} from 'rxjs/operators';
 

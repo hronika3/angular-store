@@ -57,7 +57,7 @@ describe('CartComponent', () => {
     });
 
     /*it('should clear order', () => {
-        service.addToCartUser(Main);
+        service.addToCartUser(main);
         component.remove(0);
         expect(service.getProductsById.length).toBeFalsy();
     });*/

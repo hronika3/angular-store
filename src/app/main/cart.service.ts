@@ -16,8 +16,8 @@ export class CartService {
     ) {
     }
 
-    /*public addToCart(Main: Product) {
-        this.products.push(Main);
+    /*public addToCart(main: Product) {
+        this.products.push(main);
         console.log(this.getProducts());
     }*/
 
